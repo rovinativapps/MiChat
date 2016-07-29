@@ -1,0 +1,35 @@
+﻿<style>
+    .checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+        background: #ADC133 !important;
+        border-color: #ADC133 !important;
+    }
+</style>
+
+<ion-view view-title="Interéses" right-buttons="rightButtons">
+    <ion-content>
+        <p style="text-align:center; font-size:large; margin-top:30px;">Selecciona tus interéses personales:</p>
+        <div style="margin-top:50px;">
+            <ion-list>
+
+                <ion-checkbox> Lorem ipsum</ion-checkbox>
+                <ion-checkbox> Lorem ipsum</ion-checkbox>
+                <ion-checkbox> Lorem ipsum</ion-checkbox>
+                <ion-checkbox> Lorem ipsum</ion-checkbox>
+                <ion-checkbox> Lorem ipsum</ion-checkbox>
+
+            </ion-list>
+        </div>
+        <div class="row">
+            <div class="col col-50">
+                <button class="button button-block btnGreen-big">
+                    Cancelar
+                </button>
+            </div>
+            <div class="col col-50">
+                <button class="button button-block btnGreen-big" on-tap="toHelp()">
+                    Guardar
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

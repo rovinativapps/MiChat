@@ -1,0 +1,59 @@
+﻿<style>
+    #gsm-content {
+        background-image: url("img/logo_michat.png");
+        background-size: 280px 120px;
+        background-repeat: no-repeat;
+        background-color: #FFAD1D !important;
+        background-position: 40% 25%;
+    }
+
+    #label-number-input {
+        padding-top: 0px !important;
+        margin-right: 0px;
+        margin-left: 0px;
+        background-color: transparent;
+    }
+
+    #logo {
+        top: 25%;
+        left: 0;
+        right: 0;
+        position: absolute;
+        margin: 0 auto;
+        width: 280px;
+        height: 120px;
+    }
+</style>
+
+<ion-content id="gsm-content" scroll="false">
+
+    <div class="row">
+
+        <form id="gsm" ng-style="margin">
+            <div class="list list-inset" id="label-number-input">
+                <div class="row" id="label-number">
+                    <label>Ingresa tu PIN de confirmación: </label>
+                </div>
+                <label class="item item-input">
+                    <input type="text" ng-model="pin">
+                </label>
+
+            </div>
+            <div class="row">
+                <div class="col-50">
+                    <button class="button button-block btnGreen-big">
+                        Atrás
+                    </button>
+                </div>
+                <div class="col-50" style="margin-left:10px;">
+                    <button class="button button-block btnGreen-big" on-tap="toProfile()">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</ion-content>
+

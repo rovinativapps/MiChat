@@ -1,0 +1,53 @@
+﻿<style>
+    #gsm-content {
+        background-image: url("img/logo_michat.png");
+        background-size: 280px 120px;
+        background-repeat: no-repeat;
+        background-color: #FFAD1D !important;
+        background-position: 40% 25%;
+    }
+
+    #label-number-input {
+        padding-top: 0px !important;
+        margin-right: 0px;
+        margin-left: 0px;
+        background-color: transparent;
+    }
+
+    #logo {
+        top: 25%;
+        left: 0;
+        right: 0;
+        position: absolute;
+        margin: 0 auto;
+        width: 280px;
+        height: 120px;
+    }
+</style>
+
+<ion-content id="gsm-content" scroll="false">
+    <!--<div class="row">
+        <img src="img/logo_michat.png" id="logo" />
+    </div>-->
+    <div class="row">
+
+        <form id="gsm" ng-style="margin">
+            <div class="list list-inset" id="label-number-input">
+                <div class="row" id="label-number">
+                    <label>Número de celular: </label>
+                </div>
+                <label class="item item-input">
+                    <input type="text" ng-model="operator" ng-disabled="operator!=''">
+                </label>
+
+            </div>
+
+            <button class="button button-block btnGreen-big" on-tap="toPin()">
+                Ingresar
+            </button>
+        </form>
+    </div>
+
+
+</ion-content>
+

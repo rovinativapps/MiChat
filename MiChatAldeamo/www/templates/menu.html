@@ -1,0 +1,68 @@
+﻿<style>
+    ion-item, #sesion {
+        background-color: #FFAD1D !important;
+        color: white !important;
+    }
+
+        #sesion > button {
+            color: white !important;
+        }
+
+        ion-item > a {
+            background-color: #FFAD1D !important;
+            color: white !important;
+        }
+
+    ion-side-menu {
+        background-color: #FFAD1D !important;
+    }
+
+    #toggle {
+        color: #ADC133 !important;
+    }
+
+    .bar.bar-stable .title, .bar-stable .button {
+        color: #ADC133;
+    }
+</style>
+
+<ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable" align-title="center">
+            <ion-nav-back-button>
+                <i class="ion-chevron-left"></i>
+            </ion-nav-back-button>
+            <ion-nav-buttons side="right">
+                <button ng-hide="menu" class="button button-icon button-clear ion-navicon" id="toggle" menu-toggle="right"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="right">
+        <!--<ion-header-bar class="bar-stable">
+          <h1 class="title">Left</h1>
+        </ion-header-bar>-->
+        <ion-content>
+            <ion-list>
+                <ion-item menu-close ng-click="toProfile()">
+                    Perfil
+                </ion-item>
+                <ion-item menu-close ng-click="toFaq()">
+                    FAQ
+                </ion-item>
+                <ion-item menu-close ng-click="toTerms()">
+                    Términos y condiciones
+                </ion-item>
+                <ion-item menu-close ng-click="toConfig()">
+                    Ajustes
+                </ion-item>
+                <ion-item menu-close ng-click="toHelp()">
+                    Ayuda
+                </ion-item>
+            </ion-list>
+            <div class="bar bar-footer" id="sesion">
+                <button class="button button-clear pull-left">Cerrar sesión</button>
+            </div>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

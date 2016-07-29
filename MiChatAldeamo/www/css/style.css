@@ -1,0 +1,19 @@
+#gsm {
+    /*margin-top: 90%;
+    margin-left:30px;
+    margin-right:30px;*/
+}
+
+
+.btnGreen-big {
+    background: #ADC133;
+    box-shadow: 0px 5px 0px 0px #848E23;
+    color: white;
+    min-height: 0px;
+    line-height: 35px;
+    font-size: 22px;
+}
+
+.btnGreen:hover {
+    color: white;
+}
